@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86FFA4A61C3DF57E00B215AB /* HYTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FFA4A51C3DF57E00B215AB /* HYTimerButton.m */; };
 		A4C6EA541BC4A0E6006DF5DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6EA531BC4A0E6006DF5DF /* main.m */; };
 		A4C6EA571BC4A0E6006DF5DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6EA561BC4A0E6006DF5DF /* AppDelegate.m */; };
 		A4C6EA5A1BC4A0E6006DF5DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6EA591BC4A0E6006DF5DF /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86FFA4A41C3DF57E00B215AB /* HYTimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTimerButton.h; sourceTree = "<group>"; };
+		86FFA4A51C3DF57E00B215AB /* HYTimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTimerButton.m; sourceTree = "<group>"; };
 		A4C6EA4F1BC4A0E6006DF5DF /* VerifyCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerifyCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C6EA531BC4A0E6006DF5DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4C6EA551BC4A0E6006DF5DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				A4C6EA561BC4A0E6006DF5DF /* AppDelegate.m */,
 				A4C6EA581BC4A0E6006DF5DF /* ViewController.h */,
 				A4C6EA591BC4A0E6006DF5DF /* ViewController.m */,
+				86FFA4A41C3DF57E00B215AB /* HYTimerButton.h */,
+				86FFA4A51C3DF57E00B215AB /* HYTimerButton.m */,
 				A4C6EA5B1BC4A0E6006DF5DF /* Main.storyboard */,
 				A4C6EA5E1BC4A0E6006DF5DF /* Assets.xcassets */,
 				A4C6EA601BC4A0E6006DF5DF /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FFA4A61C3DF57E00B215AB /* HYTimerButton.m in Sources */,
 				A4C6EA5A1BC4A0E6006DF5DF /* ViewController.m in Sources */,
 				A4C6EA571BC4A0E6006DF5DF /* AppDelegate.m in Sources */,
 				A4C6EA541BC4A0E6006DF5DF /* main.m in Sources */,
@@ -496,6 +502,7 @@
 				A4C6EA7E1BC4A0E6006DF5DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C6EA7F1BC4A0E6006DF5DF /* Build configuration list for PBXNativeTarget "VerifyCodeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				A4C6EA811BC4A0E6006DF5DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C6EA821BC4A0E6006DF5DF /* Build configuration list for PBXNativeTarget "VerifyCodeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				A4C6EA841BC4A0E6006DF5DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

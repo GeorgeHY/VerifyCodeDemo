@@ -7,44 +7,45 @@
 //
 
 #import "ViewController.h"
+#import "HYTimerButton.h"
 
-@interface ViewController ()
+@interface ViewController ()<HYTimerButtonDelegate>
 
-@property (nonatomic,strong) UIButton * btn;
+@property (nonatomic,strong) HYTimerButton * btn;
 
 @end
 
-static NSInteger timeOut = 10;
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.btn = [[UIButton alloc]initWithFrame:CGRectMake(50, 100, 200, 50)];
-    self.btn.backgroundColor = [UIColor redColor];
+    [self createUI];
+
+    
+}
+
+- (void)createUI
+{
+
+    
+//    self.btn = [[HYTimerButton alloc]initWithFrame:CGRectMake(50, 100, 200, 50) andDurationTime:6];
+    self.btn = [[HYTimerButton alloc]initWithFrame:CGRectMake(50, 100, 200, 50) ];
+    self.btn.backgroundColor = [UIColor whiteColor];
+    [self.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.btn setTitle:@"发送验证码" forState:UIControlStateNormal];
-    [self.btn addTarget:self action:@selector(sendCode:) forControlEvents:UIControlEventTouchUpInside];
+    self.btn.layer.borderWidth = 1;
+    self.btn.layer.borderColor = [[UIColor redColor]CGColor];
+    self.btn.delegate = self;
     [self.view addSubview:self.btn];
-    
 }
 
-- (void)sendCode:(UIButton *)btn
-{
-    NSTimer * timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange:) userInfo:nil repeats:YES];
-    [timer fire];
-    
-}
 
-- (void)timeChange:(NSTimer *)timer
+#pragma mark - HYTimerButtonDelegate
+
+- (void)buttonClicked
 {
-    timeOut --;
-    [self.btn setTitle:[NSString stringWithFormat:@"%d秒",timeOut] forState:UIControlStateNormal];
-    if (timeOut == 0) {
-        [timer invalidate];
-        [self.btn setTitle:@"重新发送" forState:UIControlStateNormal];
-        timeOut = 10;
-        
-    }
+    NSLog(@"你好");
 }
 
 @end
